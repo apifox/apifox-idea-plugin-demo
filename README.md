@@ -1,0 +1,1 @@
+#apifox-helper-test-rule
