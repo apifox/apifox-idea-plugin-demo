@@ -1,6 +1,6 @@
 package com.example.springtest.enumData;
 
-public enum EnumData {
+public enum EnumUser {
 
     // 管理员
     ADMIN(1,"描述一","地址一"),
@@ -27,7 +27,7 @@ public enum EnumData {
         return address;
     }
 
-    EnumData(int code, String desc, String address) {
+    EnumUser(int code, String desc, String address) {
         this.code = code;
         this.desc = desc;
         this.address = address;
