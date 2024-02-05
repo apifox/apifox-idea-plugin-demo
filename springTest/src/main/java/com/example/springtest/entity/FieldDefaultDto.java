@@ -218,6 +218,19 @@ public class FieldDefaultDto implements Serializable {
     private EnumData enumDataSee;
 
 
+//    /**
+//     * @writeOnly
+//     */
+//    private Case writeOnly;
+
+    /**
+     * @readOnly
+     */
+    private Case readOnly;
+
+
+
+
 
 
 }
