@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/apiNameClass")
 public class ApiNameController {
 
+
     /**
      * @api.name APINAME_TEST
      * @return
