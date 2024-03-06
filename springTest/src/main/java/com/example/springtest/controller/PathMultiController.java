@@ -18,13 +18,13 @@ public class PathMultiController {
     /**
      * @urlType first
      */
-    @GetMapping({"/methodReturnOneDocFirstDoc","/methodReturnThreeDoc"})
+    @GetMapping({"/methodReturnOneDocFirstDoc","/methodReturnOneDocTwoDoc"})
     public User methodReturnOneDocFirstDoc(){
         return null;
     }
 
     @UrlType("first")
-    @GetMapping({"/methodReturnOneDocFirstAnno","/methodReturnThreeAnno"})
+    @GetMapping({"/methodReturnOneDocFirstAnno","/methodReturnOneDocTwoAnno"})
     public User methodReturnOneDocFirstAnno(){
         return null;
     }
@@ -32,13 +32,13 @@ public class PathMultiController {
     /**
      * @urlType last
      */
-    @GetMapping({"/methodReturnOneDoc","/methodReturnThreeDoc","/methodReturnLastDoc"})
+    @GetMapping({"/methodReturnOneDocLastDoc","/methodReturnTwoDocLastDoc","/methodReturnThreeDocLastDoc"})
     public User methodReturnOneDocLastDoc(){
         return null;
     }
 
     @UrlType("last")
-    @GetMapping({"/methodReturnOneDocFirstAnno","/methodReturnThreeAnno","/methodReturnLastAnno"})
+    @GetMapping({"/methodReturnOneDocLastAnno","/methodReturnTwoDocLastAnno","/methodReturnLastDocLastAnno"})
     public User methodReturnOneDocLastAnno(){
         return null;
     }
@@ -46,13 +46,13 @@ public class PathMultiController {
     /**
      * @urlType all
      */
-    @GetMapping({"/methodReturnOneDoc","/methodReturnThreeDoc","/methodReturnLastDoc"})
+    @GetMapping({"/methodReturnOneDocAllDoc","/methodReturnTwoDocAllDoc","/methodReturnThreeDocAllDoc"})
     public User methodReturnOneDocAllDoc(){
         return null;
     }
 
     @UrlType("all")
-    @GetMapping({"/methodReturnOneDocFirstAnno","/methodReturnThreeAnno","/methodReturnLastAnno"})
+    @GetMapping({"/methodReturnOneDocAllAnno","/methodReturnTwoDocAllAnno","/methodReturnLastDocAllAnno"})
     public User methodReturnOneDocAllAnno(){
         return null;
     }

@@ -1,9 +1,6 @@
 package com.example.springtest.controller;
 
-import com.example.springtest.entity.Generics;
-import com.example.springtest.entity.GenericsParam;
-import com.example.springtest.entity.GenericsReturn;
-import com.example.springtest.entity.R;
+import com.example.springtest.entity.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -36,9 +33,8 @@ public class GenericsTestController {
     /**
      * 测试返回值和入参都有泛型
      */
-    @GetMapping("/genericsTestReturn")
+    @GetMapping("/genericsTestReturnAndParam")
     public R<GenericsReturn<Generics>> genericsTestReturnAndParam(@RequestBody R<GenericsParam<Generics>>  genericsR){
         return null;
     }
-
 }
