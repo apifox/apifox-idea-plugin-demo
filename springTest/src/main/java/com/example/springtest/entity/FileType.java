@@ -20,6 +20,9 @@ public class FileType {
     @com.example.springtest.anno.FileType("java.lang.String")
     private Long idAnno;
 
+    @com.example.springtest.anno.FileType("com.example.springtest.entity.IdObject")
+    private String idObject;
+
 
 
 }
