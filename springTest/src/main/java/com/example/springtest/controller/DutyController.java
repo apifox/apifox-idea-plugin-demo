@@ -1,5 +1,6 @@
 package com.example.springtest.controller;
 
+import com.example.springtest.anno.MethodDuty;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,20 @@ public class DutyController {
         return "dutyClassDoc";
     }
 
+    /**
+     * @methodDuty vinzhang
+     * @return
+     */
+    @GetMapping("/dutyMethodDoc")
+    public String dutyMethodDoc(){
+        return "dutyMethodDoc";
+    }
+
+    @MethodDuty("vinzhang")
+    @GetMapping("/dutyMethodAnno")
+    public String dutyMethodAnno(){
+        return "dutyMethodAnno";
+    }
 
 
 }
