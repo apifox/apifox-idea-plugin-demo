@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * 描述有问题
@@ -227,6 +228,17 @@ public class FieldDefaultDto implements Serializable {
      * @readOnly
      */
     private Case readOnly;
+
+
+    /**
+     * @fieldDoc 字段描述
+     */
+    private String fieldDoc;
+
+    /**
+     * @fieldDoc 字段描述数组
+     */
+    private List<String> fieldDocList;
 
 
 

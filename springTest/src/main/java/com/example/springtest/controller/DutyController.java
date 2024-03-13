@@ -33,5 +33,13 @@ public class DutyController {
         return "dutyMethodAnno";
     }
 
+    /**
+     * @author vinzhang
+     */
+    @GetMapping("/dutyMethodAuthor")
+    public String dutyMethodAuthor(){
+        return "dutyMethodAuthor";
+    }
+
 
 }
