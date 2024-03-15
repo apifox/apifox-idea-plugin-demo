@@ -19,9 +19,12 @@
     <packaging>pom</packaging>
 
 
+
+
     <modules>
         <module>springTest</module>
         <module>springSelfDemo</module>
+        <module>ymlRule</module>
     </modules>
 
 </project>
