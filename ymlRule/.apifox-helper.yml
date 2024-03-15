@@ -1,0 +1,14 @@
+class:
+  prefix:
+    path: /prefixYml
+
+
+
+
+method:
+  additional:
+    header:
+      - '{name: "AllAuthorizationYourSelfOne",value: "resultOne1",description: "my Token One1",required:true}'
+      - '{name: "AllAuthorizationYourSelfTwo",value: "resultOne2",description: "my Token One2",required:true}'
+    header[#header]: '{name: "DocAuthorizationYourSelf",value: "docresult",description:"my Token Doc",required:true}'
+
