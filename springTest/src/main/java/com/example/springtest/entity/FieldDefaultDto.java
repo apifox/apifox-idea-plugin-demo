@@ -22,9 +22,9 @@ public class FieldDefaultDto implements Serializable {
     private static final long serialVersionUID = -4607862808303533196L;
 
 
-    private String price;
-    private String name;
-    private Integer age;
+    private String price;//价格
+    private String name;//名字
+    private Integer age;//年龄
 
     /**
      * @default 100

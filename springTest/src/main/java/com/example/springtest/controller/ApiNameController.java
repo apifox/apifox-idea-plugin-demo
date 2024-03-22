@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 public class ApiNameController {
 
     /**
-     * @api.name APINAME_TEST1
+     * @api.name APINAME_TEST
      * @return
      */
     @GetMapping("/apiNameClassDoc")
