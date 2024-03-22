@@ -49,6 +49,16 @@ public class MethodReturnBodyController {
         return null;
     }
 
+    @ReturnType("application/octet-stream")
+    @GetMapping("/methodReturnAnnoBinary")
+    public User methodReturnAnnoBinary(){
+        return null;
+    }
 
+    @ReturnType("text/plain")
+    @GetMapping("/methodReturnAnnoRow")
+    public Void methodReturnAnnoRow(){
+        return null;
+    }
 
 }
