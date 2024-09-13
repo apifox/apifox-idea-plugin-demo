@@ -1,9 +1,6 @@
 package com.example.springtest.controller;
 
-import com.example.springtest.entity.Create;
-import com.example.springtest.entity.Delete;
-import com.example.springtest.entity.JsonViewEntity;
-import com.example.springtest.entity.Update;
+import com.example.springtest.entity.*;
 import com.fasterxml.jackson.annotation.JsonView;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +14,7 @@ public class JacksonAnnoController {
      * 处理请求
      */
     @GetMapping("/testJsonViewRequest")
-    public String testJsonViewRequest(@JsonView JsonViewEntity jsonViewEntity) {
+    public String testJsonViewRequest(@JsonView R<JsonViewEntity> jsonViewEntity) {
         return "JacksonAnno";
     }
 
@@ -25,7 +22,7 @@ public class JacksonAnnoController {
      * 处理请求
      */
     @GetMapping("/testJsonViewRequestCreate")
-    public String testJsonViewRequestCreate(@JsonView(Create.class) JsonViewEntity jsonViewEntity) {
+    public String testJsonViewRequestCreate(@JsonView(Create.class) R<JsonViewEntity> jsonViewEntity) {
         return "JacksonAnno";
     }
 

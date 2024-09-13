@@ -10,9 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class JsonViewEntity {
 
-    /**
-     * 不写注解永远存在
-     */
     private String all;
 
     @JsonView()

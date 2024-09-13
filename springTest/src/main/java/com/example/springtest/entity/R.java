@@ -1,5 +1,6 @@
 package com.example.springtest.entity;
 
+import com.fasterxml.jackson.annotation.JsonView;
 import org.springframework.http.HttpStatus;
 
 import java.io.Serializable;
@@ -37,6 +38,7 @@ public class R<T> implements Serializable {
     /**
      * 数据
      */
+    @JsonView(Create.class)
     private T data;
 
     public static <T> R<T> ok() {
