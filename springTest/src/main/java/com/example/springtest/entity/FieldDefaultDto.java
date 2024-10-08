@@ -199,12 +199,12 @@ public class FieldDefaultDto implements Serializable {
     private String permitNull;
 
     /**
-     * @notNull
+     * @null
      */
     private String permitNullDoc;
 
-    @NotNull
-    private String permitNullAnno;
+    @Null
+    private Integer permitNullAnno;
 
 
     /**
@@ -240,9 +240,29 @@ public class FieldDefaultDto implements Serializable {
      */
     private List<String> fieldDocList;
 
+    /**
+     * 对象描述1
+     * @chineseName 注释中文名1
+     *
+     */
+    @FieldRequire
+    @Null
+    private FieldOrder desc1;
 
+    /**
+     *
+     * 对象描述2
+     * @chineseName 注释中文名2
+     */
+    @FieldIgnore
+    private FieldOrder desc2;
 
-
-
+    /**
+     *
+     * 对象描述3
+     * @chineseName 注释中文名3
+     */
+    @FieldName("desc4")
+    private FieldOrder desc3;
 
 }

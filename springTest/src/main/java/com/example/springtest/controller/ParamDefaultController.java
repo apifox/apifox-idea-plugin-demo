@@ -10,7 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/paramDefaultController")
 public class ParamDefaultController {
 
-
+    /**
+     *
+     * @param id
+     * @return 返回值描述
+     */
     @GetMapping({"/paramDefault"})
     public User paramDefault(@DefaultValue("默认数据") String id){
         return null;
@@ -21,6 +25,10 @@ public class ParamDefaultController {
         return null;
     }
 
+    /**
+     * @param id 描述ID 拼接
+     * @return 返回值描述是个用户
+     */
     @GetMapping({"/paramDefaultDesc"})
     public User paramDefaultDesc(@DefaultValue(value = "默认数据Desc",desc = "描述ID") String id){
         return null;
