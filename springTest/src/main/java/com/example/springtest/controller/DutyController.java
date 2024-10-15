@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/dutyController")
 public class DutyController {
 
-
+    /**
+     * @return
+     */
     @GetMapping("/dutyClassDoc")
     public String dutyClassDoc(){
         return "dutyClassDoc";

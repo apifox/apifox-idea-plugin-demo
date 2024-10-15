@@ -3,6 +3,7 @@ package com.example.springtest.entity;
 import com.example.springtest.anno.*;
 import com.example.springtest.enumData.EnumData;
 import com.example.springtest.enumData.UserTypeConstant;
+import jakarta.annotation.Nullable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -264,5 +265,13 @@ public class FieldDefaultDto implements Serializable {
      */
     @FieldName("desc4")
     private FieldOrder desc3;
+
+    @FieldRequire
+    @Nullable
+    private FieldOrder desc5;
+
+    @FieldRequire
+    @org.springframework.lang.Nullable
+    private FieldOrder desc6;
 
 }
