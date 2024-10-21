@@ -13,7 +13,7 @@ public class ApiTagsController {
      * @tags tag1,tag2
      * @return
      */
-    @GetMapping("/apiTagsControllerDoc")
+    @GetMapping({"/apiTagsControllerDocTag1","apiTagsControllerDocTag2"})
     public String apiTagsControllerDoc(){
         return "apiNameClass";
     }

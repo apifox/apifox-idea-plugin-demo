@@ -209,15 +209,24 @@ public class FieldDefaultDto implements Serializable {
 
 
     /**
-     * @see EnumData
+     * @see EnumData#getAddress()
      */
     private String enumDataString;
 
 
     /**
+     * @see EnumData#address
+     */
+    private String enumDataInteger;
+
+    /**
      * @see EnumData
      */
     private EnumData enumDataSee;
+
+    private EnumData address;
+
+    private OpenDateEnum openDateEnum;
 
 
 //    /**
