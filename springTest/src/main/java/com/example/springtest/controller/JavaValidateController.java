@@ -1,39 +1,35 @@
 package com.example.springtest.controller;
 
 import com.example.springtest.anno.ParamType;
+import com.example.springtest.entity.JavaValiData;
 import com.example.springtest.entity.OpenApiData;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(value = "/FieldSchemaController")
-public class FieldSchemaController {
+@RequestMapping(value = "/JavaValidateController")
+public class JavaValidateController {
 
-    /**
-     * @param openApiData
-     * @return
-     */
     @GetMapping("/fileParam")
-    public String fileParam(OpenApiData openApiData){
-        return "fileParam";
+    public String fileParam(JavaValiData javaValiData){
+        return null;
     }
 
     @GetMapping("/fileFormData")
-    public String fileFormData(@ModelAttribute OpenApiData openApiData){
+    public String fileFormData(@ModelAttribute JavaValiData javaValiData){
         return "fileFormData";
     }
 
     @GetMapping("/fileJsonBody")
-    public String fileJsonBody(@RequestBody OpenApiData openApiData){
+    public String fileJsonBody(@RequestBody JavaValiData javaValiData){
         return "fileFormData";
     }
 
     /**
      * @methodType application/x-www-form-urlencoded
-     * @param openApiData
      * @return
      */
     @PostMapping("/filewwwUrl")
-    public OpenApiData filewwwUrl(@ParamType("form") OpenApiData openApiData){
+    public OpenApiData filewwwUrl(@ParamType("form") JavaValiData javaValiData){
         return null;
     }
 
