@@ -48,12 +48,14 @@ public class FieldDefaultDto<T> implements Serializable {
 
     /**
      * 描述2
+     *
      * @fieldDesc 描述一
      */
     private String descAnno;
 
     /**
      * 直接描述
+     *
      * @fieldDesc 注释描述
      */
     @FieldDesc("注解描述")
@@ -255,24 +257,24 @@ public class FieldDefaultDto<T> implements Serializable {
 
     /**
      * 对象描述1
-     * @chineseName 注释中文名1
      *
+     * @chineseName 注释中文名1
      */
     @FieldRequire
     @Null
     private FieldOrder desc1;
 
     /**
-     *
      * 对象描述2
+     *
      * @chineseName 注释中文名2
      */
     @FieldIgnore
     private FieldOrder desc2;
 
     /**
-     *
      * 对象描述3
+     *
      * @chineseName 注释中文名3
      */
     @FieldName("desc4")
@@ -286,4 +288,7 @@ public class FieldDefaultDto<T> implements Serializable {
     @org.springframework.lang.Nullable
     private FieldOrder desc6;
 
+    public String getPrice() {
+        return price;
+    }
 }
