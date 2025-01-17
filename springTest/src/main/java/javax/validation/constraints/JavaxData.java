@@ -20,4 +20,5 @@ public class JavaxData {
     @FieldIgnore(groups = InterfaceB.class)
     private String ignoreB;
 
+
 }

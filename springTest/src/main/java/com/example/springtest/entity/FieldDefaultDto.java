@@ -17,8 +17,11 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class FieldDefaultDto implements Serializable {
+public class FieldDefaultDto<T> implements Serializable {
 
+    private List<T> data;
+
+    private Object obj;
 
     private static final long serialVersionUID = -4607862808303533196L;
 

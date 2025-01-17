@@ -1,7 +1,10 @@
 package com.example.springtest.controller;
 
+import com.example.springtest.entity.Case;
 import com.example.springtest.entity.FieldDefaultDto;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping(value = "/fieldDefaultValueController")
@@ -9,7 +12,7 @@ public class FieldDefaultValueController {
 
 
     @PostMapping("/fieldDefaultValue")
-    public String fieldDefaultValue(@RequestBody FieldDefaultDto fieldDefaultDto){
+    public String fieldDefaultValue(@RequestBody List<FieldDefaultDto<Case>> fieldDefaultDto){
         return "fieldDefaultValueController";
     }
 

@@ -3,7 +3,6 @@ package com.example.springtest.controller;
 
 import com.example.springtest.anno.Response;
 import com.example.springtest.entity.R;
-import com.example.springtest.entity.RMain;
 import com.example.springtest.entity.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

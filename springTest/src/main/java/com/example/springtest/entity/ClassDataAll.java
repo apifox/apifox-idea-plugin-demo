@@ -10,7 +10,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ClassDataAll {
 
+
     private ClassNotNullData classNotNullData;
+
+    @Null
     private ClassNullData classNullData;
 
     @Null

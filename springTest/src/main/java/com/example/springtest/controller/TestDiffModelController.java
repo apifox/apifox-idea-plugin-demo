@@ -8,15 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @module SpringModule
  */
-@RestController
 public class TestDiffModelController extends BaseController {
 
     /**
-     * @module moduleSpringAnno
      * @return
+     * @module moduleSpringAnno
      */
-    @GetMapping("/testUrl")
-    private String testUrl(FieldOrder fieldOrder){
+    @GetMapping("/testUrlFieldOrder")
+    private String testUrlFieldOrder(FieldOrder fieldOrder) {
         return "";
     }
 

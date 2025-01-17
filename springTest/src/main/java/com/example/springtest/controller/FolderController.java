@@ -8,23 +8,23 @@ import org.springframework.web.bind.annotation.RestController;
  * 目录1/目录2
  */
 @RestController
-@RequestMapping(value = "/base")
+@RequestMapping(value = "/folderController")
 public class FolderController {
 
     /**
      * @return
      */
-    @GetMapping("/testbaseFolderNameDoc")
+    @GetMapping("/testFolderNameDoc")
     public String testFolderNameDoc(){
         return "testFolderName";
     }
 
-    @GetMapping("/testbaseFolderNameDoc")
+    @GetMapping("/testFolderNameAnnotation")
     public String testFolderNameAnnotation(){
         return "testFolderName";
     }
 
-    @GetMapping("/testbaseFolderName")
+    @GetMapping("/testFolderName")
     public String testFolderName(){
         return "testFolderName";
     }

@@ -21,7 +21,7 @@ public class OperationIdController {
      * @param fieldDefaultDto
      * @return
      */
-    @PostMapping("/operationId")
+    @PostMapping("/operationId1")
     public String operationId(FieldDefaultDto fieldDefaultDto){
         return "operationId";
     }
@@ -31,7 +31,7 @@ public class OperationIdController {
      * @param entity
      * @return
      */
-    @PostMapping("/operationId")
+    @PostMapping("/operationId2")
     public String operationId(Case entity){
         return "operationId";
     }
