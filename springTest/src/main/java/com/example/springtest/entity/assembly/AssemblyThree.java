@@ -1,4 +1,4 @@
-package com.example.springtest.entity;
+package com.example.springtest.entity.assembly;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
